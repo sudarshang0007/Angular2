@@ -1,0 +1,41 @@
+<form>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault01">Application name</label>
+        <input type="text" class="form-control" id="validationDefault01" placeholder="Enter application name" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault02">Display Name</label>
+        <input type="text" class="form-control" id="validationDefault02" placeholder="Display name for Application" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault03">Icon</label>
+        <img src="https://www.siemens.com/content/dam/internet/siemens-com/global/logo/siemens-logo-en-2x.png" class="img-thumbnail" alt="image" height="150px !important"  height="200px !important">
+        <input type="file" class="form-control" id="validationDefault04" placeholder="State" required>
+
+        <div class="form-group">
+            <label class="control-label">A file upload button without icon</label>
+            <input type="file" class="filestyle" data-icon="false">
+        </div>
+        
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault04">State</label>
+        <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+        <div class="invalid-feedback">
+          Please provide a valid state.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault05">Zip</label>
+        <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" pattern="[0-9]{6}" required>
+        <div class="invalid-feedback">
+          Please provide a valid zip.
+        </div>
+      </div>
+    </div>
+  
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </form>
