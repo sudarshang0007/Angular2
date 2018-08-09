@@ -4,3 +4,4 @@ echo 'Setup Downloaded'
 call node-v8.9.4-x64.msi
 call env.vbs
 xcopy .npmrc %userprofile% /R /C
+npm install @angular/cli
